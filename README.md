@@ -16,7 +16,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-    implementation "com.github.nsshopping:nslib-security-android:$latest_release"
+    implementation "com.github.nsshopping:nslib-analytics-android:$latest_release"
 }
 ```
 <br>

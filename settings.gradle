@@ -6,6 +6,6 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "nslibsecurity"
+rootProject.name = "nslibanalytics"
 include ':app'
-include ':nslib-security-module'
+include ':nslib-analytics-module'

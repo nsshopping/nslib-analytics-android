@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NsLibAnalytics</string>
+    <string name="analytics_rooted_user_warning">고객님 정보보호와 nsmall 앱 보안을 위해 루팅된 단말기에서는 nsmall 앱 서비스 이용이 제한됩니다.</string>
+</resources>

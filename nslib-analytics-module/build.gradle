@@ -2,6 +2,9 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id 'maven-publish'
+    id 'com.google.gms.google-services'
+//    id 'com.google.firebase.crashlytics'
+//    id 'com.google.firebase.firebase-perf'
 }
 
 afterEvaluate {
@@ -10,7 +13,7 @@ afterEvaluate {
             release(MavenPublication){
                 from components.release
                 groupId = 'com.pss'
-                artifactId = 'nslibsecurity'
+                artifactId = 'nslibanalytics'
                 version = '1.0'
             }
 
@@ -18,7 +21,7 @@ afterEvaluate {
                 // Applies the component for the debug build variant.
                 from components.debug
                 groupId = 'com.pss'
-                artifactId = 'nslibsecurity'
+                artifactId = 'nslibanalytics'
                 version = '1.0'
             }
         }
@@ -62,6 +65,13 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-    // root check library
-    implementation 'com.scottyab:rootbeer-lib:0.1.0'
+    // firebase
+    implementation platform('com.google.firebase:firebase-bom:27.0.0')
+    implementation 'com.google.firebase:firebase-core'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-iid'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-perf-ktx'
+    implementation 'com.google.firebase:firebase-config-ktx'
 }

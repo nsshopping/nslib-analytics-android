@@ -1,6 +1,6 @@
 
 import android.content.Context
-import com.pss.nslibsecurity.R
+import com.pss.nslibanalytics.R
 
 
 enum class NSSecurityErrorCode(val value: Int) {
@@ -20,7 +20,7 @@ object NSSecurityManager {
                 false,
                 NSSecurityError(
                     NSSecurityErrorCode.ROOTED_USER,
-                    mContext.resources.getString(R.string.security_rooted_user_warning)
+                    mContext.resources.getString(R.string.analytics_rooted_user_warning)
                 )
             )
 
